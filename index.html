@@ -1,1 +1,323 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Akhilesh Tuttagunta — Computer Engineering student working in AI/ML, robotics, embedded systems, and semiconductors.">
+  <title>Akhilesh Tuttagunta</title>
+  <style>
+    :root {
+      --text: #171717;
+      --muted: #666;
+      --line: #e7e7e7;
+      --bg: #fff;
+      --link: #171717;
+      --max: 860px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.65;
+    }
+
+    .container {
+      width: min(calc(100% - 40px), var(--max));
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 72px 0 48px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(2.3rem, 7vw, 4rem);
+      line-height: 1.05;
+      letter-spacing: -0.04em;
+      font-weight: 700;
+    }
+
+    .subtitle {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.1rem;
+      max-width: 680px;
+    }
+
+    nav {
+      margin-top: 24px;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    a {
+      color: var(--link);
+      text-underline-offset: 3px;
+    }
+
+    nav a {
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    nav a:hover { text-decoration: underline; }
+
+    section {
+      padding: 48px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    h2 {
+      margin: 0 0 28px;
+      font-size: 1.15rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .intro {
+      font-size: 1.05rem;
+      max-width: 760px;
+    }
+
+    .project {
+      padding: 0 0 32px;
+      margin-bottom: 32px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .project:last-child {
+      padding-bottom: 0;
+      margin-bottom: 0;
+      border-bottom: 0;
+    }
+
+    .project h3 {
+      margin: 0 0 4px;
+      font-size: 1.2rem;
+    }
+
+    .meta {
+      color: var(--muted);
+      font-size: 0.92rem;
+      margin-bottom: 12px;
+    }
+
+    .project p {
+      margin: 0;
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 22px;
+    }
+
+    .skill-group strong {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .skill-group span {
+      color: var(--muted);
+    }
+
+    .experience-item {
+      margin-bottom: 28px;
+    }
+
+    .experience-item:last-child { margin-bottom: 0; }
+
+    .experience-item h3 {
+      margin: 0;
+      font-size: 1.05rem;
+    }
+
+    ul {
+      margin: 8px 0 0;
+      padding-left: 20px;
+    }
+
+    footer {
+      padding: 28px 0 60px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      header { padding-top: 48px; }
+      section { padding: 36px 0; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <h1>Akhilesh Tuttagunta</h1>
+      <p class="subtitle">
+        Computer Engineering @ Purdue · AI/ML · Robotics · Embedded Systems · Semiconductors
+      </p>
+
+      <nav aria-label="Main navigation">
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <a href="https://linkedin.com/in/a-khilesh-t" target="_blank" rel="noopener">LinkedIn ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="container">
+        <p class="intro">
+          I'm a Purdue Computer Engineering student interested in building intelligent systems
+          that connect machine learning with real hardware. My current work spans reinforcement
+          learning, computer vision, embedded AI, data science, and semiconductor-related systems.
+        </p>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <h2>Projects</h2>
+
+        <article class="project">
+          <h3>ESAP Quadruped Robot — ML/AI Subteam</h3>
+          <div class="meta">MuJoCo · PyTorch · PPO · ESP-DL · Python · Aug 2026–Present</div>
+          <p>
+            Training a PPO walking policy in MuJoCo across parallel simulated quadrupeds,
+            building the simulation from real CAD geometry and measured masses, and developing
+            an int8-quantized person detector for an ESP32 to enable on-device human following.
+          </p>
+        </article>
+
+        <article class="project">
+          <h3>PraxisAI</h3>
+          <div class="meta">Python · LangChain · FastAPI · React · Pinecone · Jan–Aug 2026</div>
+          <p>
+            Built a full-stack AI platform using RAG and agentic LLM reasoning to turn academic
+            papers into structured research proposals, with semantic search grounded in relevant
+            passages across large paper collections.
+          </p>
+        </article>
+
+        <article class="project">
+          <h3>Multimodal Disaster Response Detection</h3>
+          <div class="meta">PyTorch · CLIP embeddings · Ensemble Methods · Jan–Aug 2026</div>
+          <p>
+            Built a multimodal event classifier for recognizing disaster scenes from real-world
+            imagery, and validated the end-to-end workflow for a disaster-response research setting.
+          </p>
+        </article>
+
+        <article class="project">
+          <h3>Healthcare ML Interpretability System</h3>
+          <div class="meta">PyTorch · scikit-learn · Purdue Pitch Engine · Dec 2025–Jan 2026</div>
+          <p>
+            Built a cardiovascular disease prediction pipeline on 300+ patient records with
+            model interpretability so users can understand why a patient is flagged.
+          </p>
+        </article>
+
+        <article class="project">
+          <h3>Autonomous Vehicle Performance Analysis</h3>
+          <div class="meta">MATLAB · Statistics · Jan–May 2025</div>
+          <p>
+            Analyzed adaptive cruise control data across multiple vehicle configurations and
+            produced statistical analysis, visualizations, and technical documentation.
+          </p>
+        </article>
+
+        <article class="project">
+          <h3>FPGA & Embedded Systems</h3>
+          <div class="meta">SystemVerilog · CAD · Aug–Dec 2025</div>
+          <p>
+            Designed an audio equalizer signal-processing pipeline in hardware and implemented
+            real-time Lunar Lander physics control on an FPGA.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="container">
+        <h2>Experience</h2>
+
+        <div class="experience-item">
+          <h3>Artificial Intelligence and Machine Learning Researcher</h3>
+          <div class="meta">Purdue University · Jan–Aug 2026</div>
+          <p>
+            Developed multimodal classification workflows using PyTorch and CLIP embeddings,
+            applied ensemble methods, and documented experiments for reproducibility.
+          </p>
+        </div>
+
+        <div class="experience-item">
+          <h3>Data Science Research Student</h3>
+          <div class="meta">The Data Mine, Purdue University · Aug 2024–Dec 2025</div>
+          <p>
+            Collected, cleaned, and analyzed multi-source datasets with Python, R, and SQL;
+            automated data import, processing, and validation pipelines.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <h2>Skills</h2>
+
+        <div class="skills">
+          <div class="skill-group">
+            <strong>Programming</strong>
+            <span>Python, C++, C, Java, R, SQL, MATLAB, Bash</span>
+          </div>
+
+          <div class="skill-group">
+            <strong>AI / ML</strong>
+            <span>PyTorch, TensorFlow, scikit-learn, PPO, CNNs, model quantization, RAG</span>
+          </div>
+
+          <div class="skill-group">
+            <strong>Robotics / Embedded</strong>
+            <span>MuJoCo, MJCF, ESP-DL, SystemVerilog, FPGA, ASIC, KiCAD, Linux</span>
+          </div>
+
+          <div class="skill-group">
+            <strong>Data</strong>
+            <span>NumPy, SciPy, Pandas, Matplotlib, Jupyter, ETL, Tableau, Power BI</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>
+          <a href="mailto:atuttagu@purdue.edu">atuttagu@purdue.edu</a><br>
+          <a href="https://linkedin.com/in/a-khilesh-t" target="_blank" rel="noopener">
+            linkedin.com/in/a-khilesh-t
+          </a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© 2026 Akhilesh Tuttagunta</div>
+  </footer>
+</body>
+</html>
